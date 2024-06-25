@@ -12,6 +12,6 @@
 |||| Redux |
 
 ## 결과물 예시
-![todo](https://github.com/minzziPark/TODOLIST-BuildUpProject/assets/86656147/f15886db-cd79-45e8-96da-29b22030ff7b)
+![todo2](https://github.com/minzziPark/TODOLIST-BuildUpProject/assets/86656147/1d670837-ef57-4917-a6ae-8aaa3517304e)
 
 
