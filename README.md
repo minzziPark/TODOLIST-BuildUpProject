@@ -14,4 +14,6 @@
 ## 결과물 예시
 ![todo2](https://github.com/minzziPark/TODOLIST-BuildUpProject/assets/86656147/1d670837-ef57-4917-a6ae-8aaa3517304e)
 
+## 프로젝트 진행 상황
+<a href="https://zenith-calculator-8af.notion.site/TODOLIST-BUILDUP-1cebe419fd0647ffaded5178201df90c?pvs=4">프로젝트 설명 및 진행 상황</a>
 
