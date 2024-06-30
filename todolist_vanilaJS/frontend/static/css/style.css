@@ -8,6 +8,11 @@
   animation: fadeIn 0.5s linear;
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
 #header {
   display: flex;
   flex-direction: row;

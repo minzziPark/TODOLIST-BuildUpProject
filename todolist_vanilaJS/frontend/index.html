@@ -6,18 +6,28 @@
     <link rel="stylesheet" href="static/css/style.css" />
     <title>TodoList</title>
   </head>
+  <!-- TODO : firebase 디비 구축하기 -->
+  <!-- TODO : firebase + 바닐라JS 기술검증 -->
+
   <!-- TODO : 할일 컴포넌트 만들기 -->
+  <!-- TODO : 데이터 추가하기 기능 구현 -->
+  <!-- TODO : 데이터 삭제하기 기능 구현 -->
   <!-- TODO : 해야 할 일 섹션 -->
   <!-- TODO : 완성한 일 섹션 -->
   <body>
-    <div id="header">
-      <div class="title">
-        <h1 class="todo">TO DO LIST</h1>
-        <h3 class="planner">PLANNER</h3>
+    <div id="container">
+      <div id="header">
+        <div class="title">
+          <h1 class="todo">TO DO LIST</h1>
+          <h3 class="planner">PLANNER</h3>
+        </div>
+        <h5 class="date">00.00.00 SUN</h5>
+        <div class="empty" />
       </div>
-      <h5 class="date">00.00.00 SUN</h5>
-      <div class="empty" />
     </div>
+
+    <div id="in-progress"></div>
+    <div id="done"></div>
     <script src="static/js/background.js"></script>
     <script src="static/js/date.js"></script>
   </body>
