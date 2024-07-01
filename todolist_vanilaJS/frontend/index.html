@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/modal.css" />
     <title>TodoList</title>
   </head>
   <!-- TODO : firebase 디비 구축하기 -->
@@ -30,6 +31,10 @@
       <div id="todo-list">
         <h3 class="title-list">In progress</h3>
         <button class="todo-post">+ 일정 추가하기</button>
+        <div class="modal hidden">
+          <div class="modal-background"></div>
+          <div class="modal-content"></div>
+        </div>
       </div>
       <div id="todo-list">
         <h3 class="title-list">Done</h3>
@@ -37,5 +42,6 @@
     </div>
     <script src="static/js/background.js"></script>
     <script src="static/js/date.js"></script>
+    <script src="static/js/modal.js"></script>
   </body>
 </html>
