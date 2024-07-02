@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <title>TodoList</title>
   </head>
   <!-- TODO : firebase 디비 구축하기 -->
@@ -33,7 +38,51 @@
         <button class="todo-post">+ 일정 추가하기</button>
         <div class="modal hidden">
           <div class="modal-background"></div>
-          <div class="modal-content"></div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">ADD TASK</h3>
+            </div>
+            <form class="todo-form">
+              <div class="form-group">
+                <h4 class="form-title">Title</h4>
+                <input
+                  required
+                  type="text"
+                  placeholder="일정을 입력해주세요."
+                  class="input-title"
+                />
+                <div class="form-date">
+                  <div class="start">
+                    <h4 class="form-title">Start Date</h4>
+                    <input
+                      required
+                      type="text"
+                      placeholder="시작날짜를 선택해주세요"
+                      class="datepicker"
+                    />
+                  </div>
+                  <div class="end">
+                    <h4 class="form-title">End Date</h4>
+                    <input
+                      required
+                      type="text"
+                      placeholder="마감날짜를 선택해주세요"
+                      class="datepicker"
+                    />
+                  </div>
+                </div>
+                <h4 class="form-title">Description</h4>
+                <textarea
+                  class="description"
+                  placeholder="상세 일정을 작성해주세요"
+                ></textarea>
+                <div class="btn">
+                  <button>CANCLE</button>
+                  <button>ADD</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <div id="todo-list">
@@ -43,5 +92,6 @@
     <script src="static/js/background.js"></script>
     <script src="static/js/date.js"></script>
     <script src="static/js/modal.js"></script>
+    <script src="static/js/datepicker.js"></script>
   </body>
 </html>
