@@ -33,8 +33,9 @@
       </div>
     </div>
     <div id="todo-container">
-      <div id="todo-list">
+      <div id="todo-list-container">
         <h3 class="title-list">In progress</h3>
+        <div class="todo-list"></div>
         <button class="todo-post">+ 일정 추가하기</button>
         <div class="modal hidden">
           <div class="modal-background"></div>
@@ -58,7 +59,7 @@
                       required
                       type="text"
                       placeholder="시작날짜를 선택해주세요"
-                      class="datepicker"
+                      class="start-datepicker"
                     />
                   </div>
                   <div class="end">
@@ -67,7 +68,7 @@
                       required
                       type="text"
                       placeholder="마감날짜를 선택해주세요"
-                      class="datepicker"
+                      class="end-datepicker"
                     />
                   </div>
                 </div>
@@ -77,8 +78,8 @@
                   placeholder="상세 일정을 작성해주세요"
                 ></textarea>
                 <div class="btn">
-                  <button>CANCLE</button>
-                  <button>ADD</button>
+                  <button class="btn-cancle">CANCLE</button>
+                  <button type="submit" class="btn-add">ADD</button>
                 </div>
               </div>
             </form>
@@ -93,5 +94,6 @@
     <script src="static/js/date.js"></script>
     <script src="static/js/modal.js"></script>
     <script src="static/js/datepicker.js"></script>
+    <script src="static/js/todo.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 const openButton = document.querySelector(".todo-post");
 console.log(openButton);
 const modal = document.querySelector(".modal");
-// const closeButton = modal.querySelector("button");
+const closeButton = modal.querySelector(".btn-cancle");
 const modalBackground = modal.querySelector(".modal-background");
 
 function displayModal() {
@@ -9,5 +9,5 @@ function displayModal() {
 }
 
 openButton.addEventListener("click", displayModal);
-// closeButton.addEventListener("click", displayModal);
+closeButton.addEventListener("click", displayModal);
 modalBackground.addEventListener("click", displayModal);

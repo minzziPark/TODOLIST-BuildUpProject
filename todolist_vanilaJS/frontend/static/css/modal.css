@@ -92,7 +92,8 @@ form {
 
 .input-title,
 .description,
-.datepicker {
+.start-datepicker,
+.end-datepicker {
   box-sizing: border-box;
   padding-left: 10px;
   width: 100%;
@@ -106,4 +107,30 @@ form {
 .description {
   height: 180px;
   padding-top: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-cancle,
+.btn-add {
+  width: 230px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btn-cancle {
+  background: rgba(0, 0, 0, 0.11);
+}
+
+.btn-add {
+  background: #212121;
+  color: white;
 }
