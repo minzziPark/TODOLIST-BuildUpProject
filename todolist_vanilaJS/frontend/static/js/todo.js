@@ -1,5 +1,5 @@
 const toDoForm = document.querySelector(".todo-form");
-
+console.log(modal);
 const title = document.querySelector(".input-title");
 const startDate = document.querySelector(".start-datepicker");
 console.log(startDate);
@@ -16,10 +16,9 @@ function saveTodos() {
 }
 
 function paintTodo(newTodo) {
-  const element = document.getElementsByClassName("todo-list");
+  const element = document.querySelector(".todo-list");
   console.log(element);
-  element.innerHTML = `
-	<div class="item">
+  element.innerHTML = `<div class="item">
 		<h3>${newTodo.title}</h3>
 		<h5>시작 ${newTodo.startDate}</h5>
 		<h5>종료 ${newTodo.endDate}</h5>
@@ -29,6 +28,7 @@ function paintTodo(newTodo) {
 
 function handleTodoSubmit(event) {
   event.preventDefault();
+  modal.classList.toggle("hidden");
   console.log(title);
   const newTodoObj = {
     id: Date.now(),
@@ -37,8 +37,14 @@ function handleTodoSubmit(event) {
     endDate: endDate.value,
     description: description.value,
   };
+  title.value = "";
+  startDate.value = "";
+  endDate.value = "";
+  description.value = "";
+
   toDos.push(newTodoObj);
   paintTodo(newTodoObj);
+  saveTodos();
   console.log(toDos);
 }
 
