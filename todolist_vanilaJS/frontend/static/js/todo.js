@@ -17,13 +17,14 @@ function saveTodos() {
 
 function paintTodo(newTodo) {
   const element = document.querySelector(".todo-list");
-  console.log(element);
-  element.innerHTML = `<div class="item">
-		<h3>${newTodo.title}</h3>
+  const div = document.createElement("div");
+  div.classList.add("item");
+  div.id = newTodo.id;
+  div.innerHTML = `<h3>${newTodo.title}</h3>
 		<h5>시작 ${newTodo.startDate}</h5>
 		<h5>종료 ${newTodo.endDate}</h5>
-	</div>
 	`;
+  element.appendChild(div);
 }
 
 function handleTodoSubmit(event) {
