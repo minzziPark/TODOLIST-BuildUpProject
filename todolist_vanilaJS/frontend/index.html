@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/modal.css" />
+    <link rel="stylesheet" href="static/css/todo.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
@@ -35,7 +36,7 @@
     <div id="todo-container">
       <div id="todo-list-container">
         <h3 class="title-list">In progress</h3>
-        <div class="todo-list"></div>
+        <ul class="todo-list"></ul>
         <button class="todo-post">+ 일정 추가하기</button>
         <div class="modal hidden">
           <div class="modal-background"></div>
@@ -88,6 +89,7 @@
       </div>
       <div id="todo-list">
         <h3 class="title-list">Done</h3>
+        <ul class="todo-list"></ul>
       </div>
     </div>
     <script src="static/js/background.js"></script>

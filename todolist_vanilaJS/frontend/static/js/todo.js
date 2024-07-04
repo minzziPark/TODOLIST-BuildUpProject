@@ -20,9 +20,17 @@ function paintTodo(newTodo) {
   const div = document.createElement("div");
   div.classList.add("item");
   div.id = newTodo.id;
-  div.innerHTML = `<h3>${newTodo.title}</h3>
-		<h5>시작 ${newTodo.startDate}</h5>
-		<h5>종료 ${newTodo.endDate}</h5>
+  div.innerHTML = `<div class="left-item">
+		<h3 class="item-title">${newTodo.title}</h3>
+		<div class="item-date-container">
+		<h5 class="item-date">시작  ${newTodo.startDate}</h5>
+		<h5 class="item-date">종료  ${newTodo.endDate}</h5>
+		</div>
+	</div>
+	<div class="right-item">
+	<input type="checkbox"/>
+	<img src="static/img/trash.png" class="trash" />
+	</div>
 	`;
   element.appendChild(div);
 }
@@ -37,6 +45,7 @@ function handleTodoSubmit(event) {
     startDate: startDate.value,
     endDate: endDate.value,
     description: description.value,
+    isChecked: false,
   };
   title.value = "";
   startDate.value = "";
