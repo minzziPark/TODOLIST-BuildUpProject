@@ -38,6 +38,8 @@ function paintTodo(newTodo) {
   element.appendChild(div);
   const checkedButton = div.querySelector(".check");
   checkedButton.addEventListener("change", handleTodoChange);
+  const trashButton = div.querySelector(".trash");
+  trashButton.addEventListener("click", handleTodoTrash);
 }
 
 function paintDone(doneTodo) {
@@ -59,6 +61,8 @@ function paintDone(doneTodo) {
   element.appendChild(div);
   const checkedButton = div.querySelector(".check");
   checkedButton.addEventListener("change", handleDoneChange);
+  const trashButton = div.querySelector(".trash");
+  trashButton.addEventListener("click", handleDoneTrash);
 }
 
 function handleTodoSubmit(event) {
@@ -121,6 +125,36 @@ function handleDoneChange(event) {
     done.splice(doneIndex, 1);
     saveDone();
     doneDiv.remove();
+  }
+}
+
+function handleTodoTrash(event) {
+  event.preventDefault();
+  const button = event.target;
+  const trashDiv = button.closest(".item");
+  console.log(trashDiv);
+  const trashId = parseInt(trashDiv.id);
+  const todoIndex = toDos.findIndex((todo) => todo.id === trashId);
+
+  if (todoIndex !== -1) {
+    toDos.splice(todoIndex, 1);
+    saveTodos();
+    trashDiv.remove();
+  }
+}
+
+function handleDoneTrash(event) {
+  event.preventDefault();
+  const button = event.target;
+  const trashDiv = button.closest(".item");
+  console.log(trashDiv);
+  const trashId = parseInt(trashDiv.id);
+  const doneIndex = done.findIndex((doneTodo) => doneTodo.id === trashId);
+
+  if (doneIndex !== -1) {
+    done.splice(doneIndex, 1);
+    saveDone();
+    trashDiv.remove();
   }
 }
 
