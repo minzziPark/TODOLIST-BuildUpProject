@@ -14,6 +14,9 @@
 ## 결과물 예시
 <img width="1679" alt="스크린샷 2024-07-20 오전 11 05 32" src="https://github.com/user-attachments/assets/64970e64-13a8-442d-98c9-90d33b8c5e3c">
 
+<img width="1680" alt="스크린샷 2024-07-20 오전 11 09 27" src="https://github.com/user-attachments/assets/b04ddc52-58cf-45c5-adc2-0959d0810e3a">
+
+
 ## 프로젝트 진행 상황
 <a href="https://zenith-calculator-8af.notion.site/TODOLIST-BUILDUP-1cebe419fd0647ffaded5178201df90c?pvs=4">프로젝트 설명 및 진행 상황</a>
 
