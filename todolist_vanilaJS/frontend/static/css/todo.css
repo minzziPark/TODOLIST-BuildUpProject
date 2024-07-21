@@ -43,7 +43,12 @@
   margin-block: 0em;
 }
 
+.check {
+  cursor: pointer;
+}
+
 .trash {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }

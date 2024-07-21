@@ -1,6 +1,6 @@
 const date = document.querySelector("div#header h5.date");
 
-const days = ["SUN", "MON", "TUE", "THU", "FRI", "SAT"];
+const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 function getDate() {
   const dateObj = new Date();

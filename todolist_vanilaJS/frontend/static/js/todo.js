@@ -39,7 +39,12 @@ function paintTodo(newTodo) {
   const checkedButton = div.querySelector(".check");
   checkedButton.addEventListener("change", handleTodoChange);
   const trashButton = div.querySelector(".trash");
-  trashButton.addEventListener("click", handleTodoTrash);
+  trashButton.addEventListener("click", (event) => {
+    const removeConfirm = confirm("정말 삭제하시겠습니까?");
+    if (removeConfirm) {
+      handleTodoTrash(event);
+    }
+  });
 }
 
 function paintDone(doneTodo) {
@@ -62,7 +67,12 @@ function paintDone(doneTodo) {
   const checkedButton = div.querySelector(".check");
   checkedButton.addEventListener("change", handleDoneChange);
   const trashButton = div.querySelector(".trash");
-  trashButton.addEventListener("click", handleDoneTrash);
+  trashButton.addEventListener("click", (event) => {
+    const removeConfirm = confirm("정말 삭제하시겠습니까?");
+    if (removeConfirm) {
+      handleDoneTrash(event);
+    }
+  });
 }
 
 function handleTodoSubmit(event) {
